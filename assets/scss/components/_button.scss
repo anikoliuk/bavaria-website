@@ -1,0 +1,24 @@
+.button{
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   column-gap: .5rem;
+   background-color: var(--black-color);
+   color: var(--white-color);
+   padding: 1rem 2rem;
+   font-weight: var(--font-semi-bold);
+   border-radius: .5rem;
+   transition: background-color .4s;
+
+   & i{
+      font-weight: initial;
+      font-size: 1.5rem;
+      transition: transform .4s;
+   }
+   &:hover i{
+      transform: translateX(.5rem);
+   }
+   &__opa-30{
+      background-color: var(--opacity-color-30);
+   }
+}

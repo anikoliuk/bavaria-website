@@ -1,0 +1,27 @@
+.dark-theme{
+	--title-color: hsl(220, 8%, 90%);
+   --text-color: hsl(220, 8%, 70%);
+   --body-color: hsl(220, 8%, 8%);
+   --container-color: hsl(220, 8%, 12%);
+   --opacity-color-30: hsla(0, 0%, 15%, .3);
+   --opacity-color-20: hsla(0, 0%, 15%, .2);
+}
+
+.dark-theme{
+	& .bg-header .nav__logo img{
+		filter: initial;
+	}
+	& :is(.bg-header, .nav__menu){
+		box-shadow: 0 8px 16px hsla(0, 0%, 0%, .4);
+	}
+	& .scrollup{
+		background-color: var(--container-color);
+	}
+	&::-webkit-scrollbar{
+		background-color: hsl(220, 6%, 15%);
+		
+		&-thumb{
+			background-color: hsl(220, 6%, 40%);
+		}
+	}
+}

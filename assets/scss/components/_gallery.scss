@@ -1,0 +1,40 @@
+.gallery{
+   &__container{
+      grid-template-columns: 300px;
+      justify-content: center;
+   }
+   &__card{
+      position: relative;
+      border-radius: 1.5rem;
+      overflow: hidden;
+   }
+   &__shadow{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, 
+                hsla(0, 0%, 0%, 0) 70%, 
+                hsla(0, 0%, 0%, .7) 100%);
+   }
+   &__img{
+      transition: transform .4s;
+   }
+   &__data{
+      position: absolute;
+      left: 1.25rem;
+      bottom: 1rem;
+      color: var(--white-color);
+   }
+   &__subtitle{
+      font-size: var(--h1-font-size);
+      font-family: var(--second-font);
+   }
+   &__title{
+      font-size: var(--h2-font-size);
+   }
+   &__card:hover &__img{
+      transform: scale(1.2);
+   }
+}

@@ -1,0 +1,50 @@
+.destination{
+   &__container{
+      grid-template-columns: 300px;
+      justify-content: center;
+   }
+   &__card{
+      position: relative;
+      border-radius: 1.5rem;
+      overflow: hidden;
+   }
+   &__img{
+      transition: transform .4s;
+   }
+   &__data{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      padding: 1.5rem;
+      background-color: var(--opacity-color-30);
+      backdrop-filter: blur(24px);
+      color: var(--white-color);
+      display: grid;
+      row-gap: .25rem;
+      border-radius: 1.5rem;
+      transition: background-color .4s;
+   }
+   &__subtitle{
+      font-size: var(--h2-font-size);
+      font-family: var(--second-font);
+   }
+   &__title{
+      font-size: var(--h1-font-size);
+   }
+   &__country{
+      display: flex;
+      align-items: center;
+      column-gap: .25rem;
+
+      & i{
+         font-size: 1rem;
+      }
+      & span{
+         font-size: var(--small-font-size);
+      }
+   }
+   &__card:hover &__img{
+      transform: scale(1.2);
+   }
+}
